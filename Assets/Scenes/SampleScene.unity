@@ -193,6 +193,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 9
+  groudCheckDistance: 1.4
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!70 &377328141
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -304,8 +308,8 @@ GameObject:
   - component: {fileID: 1419017274}
   - component: {fileID: 1419017273}
   - component: {fileID: 1419017275}
-  m_Layer: 0
-  m_Name: platman
+  m_Layer: 3
+  m_Name: platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
