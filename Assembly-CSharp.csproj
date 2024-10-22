@@ -62,7 +62,42 @@
     <Analyzer Include="/Users/majic_li/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.4/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/EventDefine/UserEventDefine.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/BattleLogic/EntityEnemy.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/BattleLogic/EntityEffect.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/EventDefine/BattleEventDefine.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/BattleLogic/BattleRoom.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmInitializePackage.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/GameLogic/GameManager.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmUpdatePackageVersion.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UILoadingWindow.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmUpdatePackageManifest.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/BattleLogic/EntityBullet.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/EventDefine/PatchEventDefine.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/BattleLogic/EntityAsteroid.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmCreatePackageDownloader.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UIBattleWindow.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/GameLogic/SceneBattle.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmDownloadPackageFiles.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/BattleLogic/EntityPlayer.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmDownloadPackageOver.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmUpdaterDone.cs" />
     <Compile Include="Assets/Player.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UIHomeWindow.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/Behaviour/BackgroundScroller.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/GameLogic/SceneHome.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/Boot.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/EventDefine/SceneEventDefine.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/PatchWindow.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/PatchOperation.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmClearPackageCache.cs" />
+    <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UIAboutWindow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameSetting/AssetBundleCollectorConfig.xml" />
+    <None Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameArt/Shader/MyUnlitShader.shader" />
+    <None Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameArt/Shader/StandardMobile.shader" />
+    <None Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameArt/Shader/StandardMobile.cginc" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -929,6 +964,74 @@
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.16f1c1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.001">
+      <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="YooAsset.Editor">
+      <HintPath>Library/ScriptAssemblies/YooAsset.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PsdPlugin">
+      <HintPath>Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Path.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Runtime">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="YooAsset">
+      <HintPath>Library/ScriptAssemblies/YooAsset.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
       <Private>False</Private>
@@ -941,28 +1044,8 @@
       <HintPath>Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="PsdPlugin">
-      <HintPath>Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
@@ -981,56 +1064,28 @@
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
       <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
@@ -1047,10 +1102,6 @@
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
@@ -1081,20 +1132,20 @@
       <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
       <HintPath>Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
@@ -1107,6 +1158,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UniFramework.Event.csproj" />
+    <ProjectReference Include="UniTask.TextMeshPro.csproj" />
+    <ProjectReference Include="UniTask.Addressables.csproj" />
+    <ProjectReference Include="UniFramework.Machine.csproj" />
+    <ProjectReference Include="UniTask.DOTween.csproj" />
+    <ProjectReference Include="UniTask.Linq.csproj" />
+    <ProjectReference Include="YooAsset.RuntimeExtension.csproj" />
+    <ProjectReference Include="UniFramework.Utility.csproj" />
+    <ProjectReference Include="UniTask.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
