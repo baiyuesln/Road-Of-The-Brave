@@ -92,6 +92,7 @@
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/PatchOperation.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmClearPackageCache.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UIAboutWindow.cs" />
+    <Compile Include="Assets/PlayerAnimEvents.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameSetting/AssetBundleCollectorConfig.xml" />
