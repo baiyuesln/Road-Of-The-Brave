@@ -69,7 +69,6 @@
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/BattleLogic/BattleRoom.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmInitializePackage.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/GameLogic/GameManager.cs" />
-    <Compile Include="Assets/Entity.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmUpdatePackageVersion.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UILoadingWindow.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmUpdatePackageManifest.cs" />
@@ -77,7 +76,6 @@
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/EventDefine/PatchEventDefine.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/BattleLogic/EntityAsteroid.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmCreatePackageDownloader.cs" />
-    <Compile Include="Assets/PlayerAnimEvents.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UIBattleWindow.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/GameLogic/SceneBattle.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmDownloadPackageFiles.cs" />
@@ -87,7 +85,6 @@
     <Compile Include="Assets/Player.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UIHomeWindow.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/Behaviour/BackgroundScroller.cs" />
-    <Compile Include="Assets/EnemySkeleton.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/GameLogic/SceneHome.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/Boot.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/EventDefine/SceneEventDefine.cs" />
@@ -95,6 +92,10 @@
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/PatchOperation.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmClearPackageCache.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UIAboutWindow.cs" />
+    <Compile Include="Assets/PlayerState.cs" />
+    <Compile Include="Assets/PlayerStateMachine.cs" />
+    <Compile Include="Assets/PlayerMoveState.cs" />
+    <Compile Include="Assets/PlayerIdleState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameSetting/AssetBundleCollectorConfig.xml" />
