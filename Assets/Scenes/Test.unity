@@ -283,12 +283,12 @@ MonoBehaviour:
   groundCheckDistance: 1.48
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   wallCheck: {fileID: 1379420796}
   wallCheckDistance: 0.72
   whatIsWall:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!50 &986745648
 Rigidbody2D:
   serializedVersion: 4
