@@ -11,6 +11,7 @@ public class PlayerState
 
     protected float xInput;
     private string animBoolName;
+    protected float stateTimer;
 
     public PlayerState(Player player, PlayerStateMachine stateMachine, string animBoolName) 
     {
@@ -29,6 +30,7 @@ public class PlayerState
 
     public virtual void Update()
     {
+        stateTimer -= Time.deltaTime;
         xInput = Input.GetAxisRaw("Horizontal");
         player.anim.SetFloat("yVelocity", rb.velocity.y); 
     }
