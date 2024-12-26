@@ -84,6 +84,7 @@
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/BattleLogic/EntityPlayer.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmDownloadPackageOver.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/PatchLogic/FsmNode/FsmUpdaterDone.cs" />
+    <Compile Include="Assets/PlayerDashState.cs" />
     <Compile Include="Assets/Player.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UIHomeWindow.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/Behaviour/BackgroundScroller.cs" />
@@ -99,7 +100,8 @@
     <Compile Include="Assets/PlayerStateMachine.cs" />
     <Compile Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameScript/Runtime/WindowLogic/UIAboutWindow.cs" />
     <Compile Include="Assets/PlayerGroundedState.cs" />
-    <Compile Include="Assets/PlayerDashState.cs" />
+    <Compile Include="Assets/PlayerWallSlideState.cs" />
+    <Compile Include="Assets/PlayerWallJumpState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Samples/YooAsset/2.2.4-preview/Space Shooter/GameSetting/AssetBundleCollectorConfig.xml" />

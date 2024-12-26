@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAirState : PlayerState   
+public class PlayerWallJumpState : PlayerState
 {
-    public PlayerAirState(Player player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
+    public PlayerWallJumpState(Player player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
     {
+
     }
 
     public override void Enter()
     {
         base.Enter();
-        
+        stateTimer = 1f;
+        player.SetVelocity(-player.facingDir*5,player.jumpForce);
     }
-    
+
     public override void Exit()
     {
         base.Exit();
@@ -22,19 +24,13 @@ public class PlayerAirState : PlayerState
     public override void Update()
     {
         base.Update();
-
-        if(player.IsWallDetected())
+        if(stateTimer < 0)
         {
-            stateMachine.ChangeState(player.wallSlide);
+            stateMachine.ChangeState(player.airState);
         }
         if(player.IsGroudDetected())
         {
             stateMachine.ChangeState(player.idleState);
-        }
-
-        if(xInput != 0)
-        {
-            player.SetVelocity(player.moveSpeed*.8f*xInput,rb.velocity.y);
         }
     }
 }

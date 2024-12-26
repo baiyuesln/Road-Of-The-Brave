@@ -28,5 +28,9 @@ public class PlayerDashState : PlayerState
         {
             stateMachine.ChangeState(player.idleState);
         }
+        if(player.IsWallDetected()&&!player.IsGroudDetected())
+        {
+            stateMachine.ChangeState(player.wallSlide);
+        }
     }
 }
