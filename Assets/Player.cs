@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [Header("Attack Info")]
+    public Vector2[] attackMovement;
+
     [Header("Move Info")]
     public float moveSpeed = 8f;
     public float jumpForce = 10f;
@@ -37,6 +40,7 @@ public class Player : MonoBehaviour
     public PlayerWallSlideState wallSlide { get; private set; }
     public PlayerWallJumpState wallJump { get; private set; }
     public PlayerDashState dashState { get; private set; }
+    public PlayerPrimaryAttackState primaryAttack { get; private set; }
     #endregion
 
 
@@ -51,6 +55,7 @@ public class Player : MonoBehaviour
         dashState = new PlayerDashState(this, stateMachine, "Dash");
         wallSlide = new PlayerWallSlideState(this, stateMachine, "WallSlide");
         wallJump  = new PlayerWallJumpState(this, stateMachine, "Jump");
+        primaryAttack = new PlayerPrimaryAttackState(this, stateMachine, "Attack");
     }
 
     private void Start()
@@ -67,34 +72,7 @@ public class Player : MonoBehaviour
         CheckForDashInput();
     }
 
-    public void SetVelocity(float xVelocity,float yVelocity)
-    {
-        rb.velocity = new Vector2(xVelocity, yVelocity);
-        FilpController(xVelocity);
-    }
-
-    public bool IsGroudDetected() => Physics2D.Raycast(groundCheck.position,Vector2.down,groundCheckDistance,whatIsGround);
-    public bool IsWallDetected() => Physics2D.Raycast(wallCheck.position,Vector2.right*facingDir ,wallCheckDistance,whatIsWall);
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckDistance);
-        Gizmos.DrawWireSphere(wallCheck.position, wallCheckDistance);
-    }   
-
-    public void Filp()
-    {
-        facingDir = facingDir * -1;
-        facingRight = !facingRight;
-        transform.Rotate(0,180,0);//?
-    }
-
-    public void FilpController(float x)
-    {
-        if(x > 0 && !facingRight)
-            Filp();
-        else if(x<0 && facingRight)
-            Filp();
-    }
+    public void AnimationTrigger() => stateMachine.currentState.AnimationTrigger();
 
     private void CheckForDashInput()
     {
@@ -112,4 +90,39 @@ public class Player : MonoBehaviour
             stateMachine.ChangeState(dashState);
         }
     }
+
+    #region Velocity
+    public void ZeroVelocity() => rb.velocity = new Vector2(0, 0);
+    public void SetVelocity(float xVelocity,float yVelocity)
+    {
+        rb.velocity = new Vector2(xVelocity, yVelocity);
+        FilpController(xVelocity);
+    }
+    #endregion
+    #region Collision
+    public bool IsGroudDetected() => Physics2D.Raycast(groundCheck.position,Vector2.down,groundCheckDistance,whatIsGround);
+    public bool IsWallDetected() => Physics2D.Raycast(wallCheck.position,Vector2.right*facingDir ,wallCheckDistance,whatIsWall);
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckDistance);
+        Gizmos.DrawWireSphere(wallCheck.position, wallCheckDistance);
+    }   
+    #endregion
+    #region Filp
+    public void Filp()
+    {
+        facingDir = facingDir * -1;
+        facingRight = !facingRight;
+        transform.Rotate(0,180,0);//?
+    }
+
+    public void FilpController(float x)
+    {
+        if(x > 0 && !facingRight)
+            Filp();
+        else if(x<0 && facingRight)
+            Filp();
+    }
+    #endregion
+    
 }
